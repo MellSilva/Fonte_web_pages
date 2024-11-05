@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+body{
+    background-image: url(../../imagenes/fondo_azul_luced.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+.contrenedor__todo{
+    width: 100%;
+    max-width: 70px;
+    margin: auto;
+    position: relative;
+
+}
+.caja_tracera{
+    width: 64%;
+    height: 250px;
+    padding: 5px 10px;
+    margin-left: 25%;
+    display: flex;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 128,255,0.5);
+    margin-left: 15%;
+    text-align: center;
+    align-content: center;
+}
+.caja_tracera div{
+    margin: 60px 35px;
+    color: white;
+    transition: all 500ms;
+    align-content: center;
+    margin-top: 35px;
+    margin-left: 83px;
+    text-align: left;
+    
+}
+.caja_tracera div p,.caja_tracera biv button{
+    margin-top: 30px;
+}
+.caja_tracera div h3{
+    font-weight: 400px;
+    font-size: 26px;
+    
+    align-content: center;
+}
+.caja_tracera button{
+    padding: 10px 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 30px;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transform: all 300ms;
+
+}
+.caja_tracera button:hover{
+    background: #fff;
+    color: #46A2FD;
+
+}
+.contenedor_login_register{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    width: 100%;
+    max-width: 380px;
+    margin-left: 200px;
+    margin-top: 20px;
+    position: relative;
+    top: -140px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+
+}
+.contenedor_login_register form {
+    width: 90%;
+    height: 350px;
+    padding: 30px 60px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+}
+.contenedor_login_register  input{
+    width: 250px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    height: 28px;
+    margin-right: 20%;
+    align-content: center;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+p{
+    margin-top: 20px;
+}
+.contenedor_login_register form button , .error_login_register button {
+    padding: 10px 40px;
+    align-items: center;
+    margin-left: 12px;
+    margin-top: 10px;
+    background-color: #46A2FD;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contenedor_login_register form h2{
+    color: #46A2FD;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ayuda{
+    padding: 5px 5px;
+    border: none;
+    margin-left: 98%;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+    
+}
+.error_login_register {
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    margin-top: -20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+
+}
+.error_login_register button{
+    margin-left: 80%;
+}
+
+.error_login_register{
+    display: none;
+}
+@media screen and (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja_tracera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja_tracera div{
+        margin: 0;
+        position: absolute;
+    }
+    /*formularios*/
+    .contenedor_login_register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor_login_register form{
+        position: relative;
+    }
+    .formulario_login{
+        margin-left: 30%;
+    }
+}

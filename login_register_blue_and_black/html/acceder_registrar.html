@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiRed</title>
+    <link rel="stylesheet" href="../css/acceder_registrar_caja.css">
+</head>
+<body>
+    <button id="bt_ayuda" class="ayuda">?</button>
+    <main>
+
+    
+    <div class="contenedor__todo">
+        <div class="caja_tracera">
+            <div class="caja_tracera_login">
+                <h3>Ya tienes cuenta?</h3>
+                <p>Inicia seccion para entrar </p>
+                <button id="bt_iniciar_seccion">Iniciar Seccion</button>
+    
+            </div>
+            <div class="caja_tracera_registrar">
+                <h3>Aun no tienes cuenta?</h3>
+                <p>Registrate para  iniciar seccion</p>
+                <button id="bt_registrarse">Registrarse</button>
+            </div>
+    </div>
+        <div class="contenedor_login_register ">
+            <form action="" class="formulario_login">
+                <h2>Iniciar Seccion</h2>
+                <input type="email" placeholder="Correo Electronico" required minlength="8">
+                <input type="password" placeholder="Password" required minlength="8">
+                <button>Entrar</button>
+            </form>
+
+            <form action="" class="formulario_register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre(s) y Apellidos" required minlength="8">
+                <input type="email" placeholder="Correo Electronico" required minlength="8">
+                <input type="text" placeholder="Users" required minlength="5">
+                <input type="password" placeholder="Password" required minlength="8" >
+                <button>Registrar</button>
+            </form>
+            
+
+        </div>
+        
+    </div>
+    <div class="error_login_register">
+        <p>
+            Para poder continuar debe de ingresar: 
+            <p>Una contraseña de almenos 8 caracteres entre ellos :</p>
+            <ul>
+                * Una Mayuscula
+            </ul>
+            <ul>
+                * Un numero
+            </ul>
+            <ul>* Un caracter especial</ul>
+
+        </p>
+        <p>
+            Los correos deben estar correctamente escritos (example@.gmail.com)
+        </p>
+        <p>
+            Su nombre de usuario debe tener almenos 5 caracteres 
+        </p>
+        <button id="bt_cerrar">Cerrar</button>
+    </div>
+</main>
+<script src="../java_scripts/prueba.js"></script>
+</body>
+</html>
